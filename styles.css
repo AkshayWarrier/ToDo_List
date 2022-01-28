@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    height: 100%;
+    background-color: #444444;  
+}
+body{
+    height: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171717;
+}
+
+.nav-links{
+    flex:1;
+    text-align: end;
+}
+
+.nav-links ul li{
+    padding:0% 2%;
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.nav-links ul li a{
+   text-decoration: none;
+   color:#EDEDED; 
+}
+
+.nav-bar h1{
+    font-size:30px;
+    color:#DA0037;
+}
+.s1{
+    color:#da5700;
+}
+.s2{
+    color:#00da49;
+}
+.lists-container{
+    height: 100%;
+}
+
+.lists{
+    list-style: none;
+    padding-top: 3%;
+    height: 100%;
+    
+}
+
+.lists li{
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    width:20%;
+    margin-left: 1%;
+}
+.lists li .list-container{
+    display:flex;
+    flex-direction: column;
+    background-color:lavender;
+    border-radius: 3%;
+    width:100%;
+    min-height: 60%;
+    height: auto;
+}
+.list-container.c1{
+    border:3px solid #DA0037;
+}
+.list-container.c2{
+    border:3px solid #da5700;
+}
+.list-container.c3{
+    border:3px solid #00da49;
+}
+
+.list-container .list-title{
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+    margin:2%;
+    width:auto;
+    min-height: 10%;
+    height: auto;
+    
+}
+.list-container .list-content{
+    list-style: none;
+    flex:1;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    width:auto;
+    height:100%;
+    margin:2%;
+    
+}
+
+.list-content li{
+    box-sizing: border-box;
+    width:100%;
+    height:15%;
+    /* background-color:rgba(248, 246, 246,0.8); */
+    border-radius: 5%;
+    padding:3% 3%;
+    margin-bottom: 2%;
+}
+.list-container.c1 .list-content .item{
+    background-color:#da003794;
+}
+
+.list-container.c2 .list-content .item{
+    background-color:#da570094;
+}
+
+.list-container.c3 .list-content .item{
+    background-color: #00da4996;
+}
+
+li .fa.fa-plus{
+    cursor:pointer;
+}
+
+li.add-list{
+    text-align: center;
+    padding-top: 0.5%;
+    color:crimson;
+    width:36px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+}
