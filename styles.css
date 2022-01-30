@@ -138,3 +138,8 @@ li.add-list{
     border-radius: 50%;
     background-color: #EDEDED;
 }
+
+li.add-item{
+    width:auto;
+    height:auto;
+}
