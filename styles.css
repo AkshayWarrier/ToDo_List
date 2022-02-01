@@ -5,7 +5,8 @@
 }
 html{
     height: 100%;
-    background-color: #444444;  
+    background-color: #444444;
+
 }
 body{
     height: 100%;
@@ -17,6 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #171717;
+    
 }
 
 .nav-links{
@@ -39,12 +41,6 @@ body{
 .nav-bar h1{
     font-size:30px;
     color:#DA0037;
-}
-.s1{
-    color:#da5700;
-}
-.s2{
-    color:#00da49;
 }
 .lists-container{
     height: 100%;
@@ -72,15 +68,24 @@ body{
     width:100%;
     min-height: 60%;
     height: auto;
+    animation:expand 0.5s ease-in-out forwards;
 }
+@keyframes expand{
+    to{
+        min-height: 60%;
+        /* width:100%; */
+    }
+}
+
+
 .list-container.c1{
-    border:3px solid #DA0037;
+    border:3px solid #da001d;
 }
 .list-container.c2{
     border:3px solid #da5700;
 }
 .list-container.c3{
-    border:3px solid #00da49;
+    border:3px solid #dad600;
 }
 
 .list-container .list-title{
@@ -114,7 +119,8 @@ body{
     margin-bottom: 2%;
 }
 .list-container.c1 .list-content .item{
-    background-color:#da003794;
+    /* background-color:#da003794; */
+    background-color: #da001d94;
 }
 
 .list-container.c2 .list-content .item{
@@ -122,7 +128,7 @@ body{
 }
 
 .list-container.c3 .list-content .item{
-    background-color: #00da4996;
+    background-color: #dad60094;
 }
 
 li .fa.fa-plus{
