@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="styles.css" rel = "stylesheet">
+    <link href="styles.css" rel = "stylesheet" crossorigin="anonymous">
     
     <title>ToDo</title>
 </head>
 <body>
     <nav class="nav-bar">
-        <h1>ToDo</h1>
+        <h1>To<span class = "purp">Do</span></h1>
         <div class="nav-links">
             <ul>
                 <li><a href="index.html">Option 1</a></li>
@@ -26,30 +26,33 @@
     </nav>
     <div class="lists-container">
         <ul class="lists">
-            <li class = "l1">
+            <li class = "l">
                 <div class="list-container c1">
                     <p class="list-title" contenteditable="true">To Do</p>
                     <ul class = list-content>
                         <li class = "item" contenteditable="true">Item 1</li>
                         <li class = "item" contenteditable="true">Item 2</li>
                         <li class = "item" contenteditable="true">Item 3</li>
-                        <li class = "add-item"><i class="fa fa-plus"></i></li> 
+                        <li class = "add-item"><i class="fa fa-plus"></i></li>
+                        <li class = "remove-item"><i class="fa fa-minus"></i></li> 
                     </ul>
                     
                 </div>
             </li>
-            <li class = "l2">
+            <li class = "l">
                 <div class="list-container c2">
                     <p class="list-title" contenteditable="true">Doing</p>
                     <ul class = list-content>
                         <li class = "item" contenteditable="true">Item 1</li>
                         <li class = "item" contenteditable="true">Item 2</li>
                         <li class = "item" contenteditable="true">Item 3</li>
+                        
                         <li class = "add-item"><i class="fa fa-plus"></i></li>
+                        <li class = "remove-item"><i class="fa fa-minus"></i></li>
                     </ul>
                 </div>
             </li>
-            <li class = "l3">
+            <li class = "l">
                 
                 <div class="list-container c3">
                     <p class="list-title" contenteditable="true">Done</p>
@@ -57,11 +60,14 @@
                         <li class = "item" contenteditable="true">Item 1</li>
                         <li class = "item" contenteditable="true">Item 2</li>
                         <li class = "item" contenteditable="true">Item 3</li>
+                        
                         <li class = "add-item"><i class="fa fa-plus"></i></li>
+                        <li class = "remove-item"><i class="fa fa-minus"></i></li>
                     </ul>
                 </div>
             </li>
             <li class = "add-list"><i class="fa fa-plus"></i></li>
+            <li class = "remove-list"><i class="fa fa-minus"></i></li>
         </ul>
 
     </div>
