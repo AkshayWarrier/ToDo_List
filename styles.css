@@ -9,6 +9,7 @@ html{
 body{
     height: 100%;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .nav-bar{
@@ -32,7 +33,6 @@ body{
     padding:0% 2%;
     list-style: none;
     display: inline-block;
-    overflow-inline: scroll;
 }
 .purp{
     color:#B743BC;
@@ -79,7 +79,7 @@ body{
     border-radius: 5%;
     width:100%;
     min-height: 60%;
-    height: auto;
+    /* max-height: 100%; */
     
 }
 
@@ -109,23 +109,24 @@ body{
     padding-left: 2%;
     padding-right: 2%;
     width:auto;
-    height:100%;
+    height: 100%;
     margin:2%;
-    
 }
 
-.list-content li{
+.list-content .item{
     box-sizing: border-box;
     width:100%;
-    height:15%;
+    height:auto;
     border-radius: 7px; 
     padding:3% 3%;
     margin-bottom: 2%;
     animation:wipe-enter .5s ease-in-out forwards;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 
-.list-container .list-content .item{
+.item{
     background-color: #da001dbb;
 }
 
@@ -170,6 +171,7 @@ li.add-list{
     border-radius: 50%;
     background-color: #EDEDED;
     margin-left:2%;
+    
 }
 li.remove-list{
     flex-shrink: 0;
@@ -187,9 +189,14 @@ li.add-item{
     width:auto;
     height:auto;
     display:inline-block;
+    padding: 1%;
 }
 li.remove-item{
     width:auto;
     height:auto;
     display:inline-block;
+    padding: 1%;
+}
+.item.dragging{
+    /* rotate: 10deg; */
 }
