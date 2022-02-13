@@ -156,6 +156,10 @@ li .fa.fa-plus{
     cursor:pointer;
 }
 
+li .fa.fa-minus{
+    cursor:pointer;
+}
+
 li.add-list{
     flex-shrink: 0;
     text-align: center;

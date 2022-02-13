@@ -5,18 +5,16 @@ var removeList = document.querySelectorAll('.remove-list')
 
 for(var i = 0; i < removeList.length; i++){
     removeList[i].addEventListener('click', element => {
-        x = element.path[2].children
+        x = element.composedPath()[2].children
         x[x.length-3].remove()
     })
 }
 
 for(var i = 0; i < removeItem.length; i++){
     removeItem[i].addEventListener('click',element => {
-        x = element.path[2].children
-        console.log(x[x.length - 3])
+        x = element.composedPath()[2].children
         x[x.length-3].remove()
-    }
-    )
+    })
 }
 
 
@@ -45,13 +43,25 @@ function create_list(x){
     list_content.appendChild(item)
 
     const add_item_btn = document.createElement('li')
-    add_item_btn.className = 'add_item'
+    add_item_btn.className = 'add-item'
     const plus = document.createElement('i')
     plus.className = 'fa fa-plus'
     plus.addEventListener("click",add_item)
     add_item_btn.appendChild(plus)
 
+    const remove_item_btn = document.createElement('li')
+    remove_item_btn.className = 'remove-item'
+    const minus = document.createElement('i')
+    minus.className = 'fa fa-minus'
+    minus.addEventListener("click",element => {
+        x = element.composedPath()[2].children
+        x[x.length-3].remove()
+    })
+    remove_item_btn.appendChild(minus)
+
     list_content.appendChild(add_item_btn)
+    list_content.appendChild(remove_item_btn)
+    
 
     
     list_container.appendChild(list_title)
@@ -69,7 +79,7 @@ function add_item(x){
     item.className = 'item'
     item.contentEditable = 'true'
     item.innerText = 'New Item'
-    var path = x.path
+    var path = x.composedPath()
     path[2].insertBefore(item,path[1])
 }
 addList.addEventListener("click",create_list)
